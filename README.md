@@ -25,7 +25,7 @@ Database Application (Provisioning)
 
 ---
 
-## 🟢 HR Authoritative Application
+##  HR Authoritative Application
 
 - Created HR-App using CSV file
 - Imported employee data
@@ -61,7 +61,7 @@ Database Application (Provisioning)
 
 ---
 
-## 🟣 Certification
+##  Certification
 
 - Manager certification configured
 - Admin entitlement excluded
