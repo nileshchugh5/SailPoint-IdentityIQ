@@ -1,0 +1,22 @@
+employeeId,firstName,lastName,managerId,fullName,email,department,employeeStatus
+1a,Nilesh,Chugh,,Nilesh.Chugh,Nilesh.Chugh@demoexample.com,Regional Operations,CEO
+21a,Ravi,Smith,1a,Ravi.Sharma,Ravi.Sharma@demoexample.com,Executive Management,Vice President
+22a,Meet,John,1a,Meet.John,Meet.John@demoexample.com,Regional Operations, Director
+23a,Sumit,Shukla,1a,Sumit.Shukla,Sumit.Sukla@demoexample.com,Regional Operations, Developer
+24a,D'R,O'Mah,1a,D'A.O'Mah,D'A.O'Mah@demoexample.com,Regional Operations,Tester
+25b,Vicky,Will,1a,Vicky.Will,Vicky.Will@demoexample.com,Regional Operations, Senior Analyst
+26c,Prathik,Jone,1a,Prathik.Jone,Prathik.Jone@demoexample.com,Regional Operations, Analyst
+31a,Rob,Blue,21a,Rob.Blue,Rob.Blue@demoexample.com,Information Technology,Product Manager
+32b,Lathan,Dave,21a,Latham.Dave,Latham.Dave@demoexample.com,Information Technology, Product Manager
+33c,Mary,martin,21a,Mary.Martin,Mary.Martin@demoexample.com,Engineering, Tester
+34d,Barbara,Wilson,31a,Barbara.Wilson,Barbara.Wilson@demoexample.com,Engineering,Trainne
+41a,William,Moore,32b,William.Moore,William.Moore@demoexample.com,Human Resources, Tester
+42b,Elizabeth,Taylor,32b,Elizabeth.Taylor,Elizabeth.Taylor@demoexample.com,Human Resources, Trainne
+43c,David,Anderson,1a,David.Anderson,David.Anderson@demoexample.com,Inventory, Trainne
+44d,Jennifer,Thomas,1a,Jennifer.Thomas,Jennifer.Thomas@demoexample.com,Inventory,Product Manager
+51a,Richard,Jackson,41a,Richard.Jackson,Richard.Jackson@demoexample.com,Accounting, Tester
+52b,Maria,White,42b,Maria.White,Maria.White@demoexample.com,Accounting, Developer
+53c,Charles,Harris,41a,Charles.Harris,Charles.Harris@demoexample.com,Finance,Senior Analyst
+54d,Susan,Martin,42b,Susan.Martin,Susan.Martin@demoexample.com,Finance, Trainne
+55e,Joseph,Thompson,43c,Joseph.Thompson,Joseph.Thompson@demoexample.com,Information Technology,Tester
+60h,Bob,Employee,1a,Bob.Employee,Bob.Employee@demoexample.com,Finance, Developer

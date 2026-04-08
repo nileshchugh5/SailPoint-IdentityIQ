@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Workflow PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Workflow explicitTransitions="true" name="Sample Leaver" type="IdentityLifecycle">
+  <Step action="script:System.out.println(&quot;Leaver Start&quot;);" icon="Start" name="Start" posX="92" posY="73">
+    <Transition to="Generic Step"/>
+  </Step>
+  <Step action="script:System.out.println(&quot;Leaver Stopped&quot;);" icon="Stop" name="Stop" posX="514" posY="63"/>
+  <Step icon="Default" name="Generic Step" posX="276" posY="62">
+    <Transition to="Stop"/>
+  </Step>
+</Workflow>

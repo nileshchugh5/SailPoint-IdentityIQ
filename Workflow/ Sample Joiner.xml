@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Workflow PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Workflow explicitTransitions="true" name="Sample Joiner" type="IdentityLifecycle">
+  <Step action="script:System.out.println(&quot;In Start State&quot;);" icon="Start" name="Start" posX="49" posY="76">
+    <Transition to="Generic Step"/>
+  </Step>
+  <Step action="script:System.out.println(&quot;In Stop State&quot;);" icon="Stop" name="Stop" posX="681" posY="68"/>
+  <Step icon="Default" name="Generic Step" posX="367" posY="76">
+    <Script>
+      <Source> System.out.println("A new Employee  " + event.getObject().getExtended1()+"  has joined the organization ");</Source>
+    </Script>
+    <Transition to="Stop"/>
+  </Step>
+</Workflow>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Workflow PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Workflow explicitTransitions="true" name="Sample Mover" type="IdentityLifecycle">
+  <Step action="script:System.out.println(&quot;Manger Trigger&quot;);" icon="Start" name="Start" posX="79" posY="56">
+    <Transition to="Step 1"/>
+  </Step>
+  <Step icon="Stop" name="Stop" posX="860" posY="66"/>
+  <Step icon="Default" name="Step 1" posX="315" posY="30">
+    <Approval name="Manger Form" return="" send="">
+      <Form name="Manger Form">
+        <Attributes>
+          <Map>
+            <entry key="pageTitle" value="Manger Form"/>
+          </Map>
+        </Attributes>
+        <Section name="Section 1">
+          <Field displayName="Previous Manger" name="Previous Manger" type="string"/>
+          <Field name="Field 2" type="string"/>
+        </Section>
+        <Button action="cancel" label="Cancel"/>
+        <Button action="next" label="Next"/>
+      </Form>
+    </Approval>
+    <Transition to="Approval"/>
+  </Step>
+  <Step icon="Default" name="Approval" posX="614" posY="81">
+    <Approval description="Owner" mode="serial" name="Approval" owner="spadmin"/>
+    <Transition to="Stop"/>
+  </Step>
+</Workflow>

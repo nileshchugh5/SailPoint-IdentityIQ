@@ -1,0 +1,22 @@
+employeeId,AccountName,managerId,Active,User Level,AccountID
+1a,Nilesh.Chugh,,Active,Admin,1a
+21a,Ravi.Sharma,1a,Active,"Super User,Privileged User,Admin",21a
+22a,Meet.John,1a,Active,Super User,22a
+23a,Sumit.Shukla,1a,Active,"Privileged User,Super User",23a
+24a,D'A.O'Mah,1a,Active,Admin,24a
+25b,Vicky.Will,1a,Active,"User,Super User",25b
+26c,Prathik.Jone,1a,Active,"Super User,Privileged User",26c
+31a,Vashinavi.Blue,1a,Active,User,31a
+32b,Pooja.Dave,1a,Active,Privileged User,32b
+33c,Mary.Martin,1a,Active,Admin,33c
+34d,Shubshree.Wilson,1a,Active,Admin,34d
+41a,William.Moore,1a,Active,Privileged User,41a
+42b,Elizabeth.Taylor,1a,Active,Privileged User,42b
+43c,Krish.Anderson,1a,Active,"Super User,Privileged User",43c
+44d,Jennifer.Thomas,1a,Active,Admin,44d
+51a,Kamal.Jackson,1a,Active,"User,Privileged User",51a
+52b,Maria.White,1a,Active,Super User,52b
+53c,Harsh.Harris,1a,Active,User,53c
+54d,Susan.Martin,1a,Active,"Privileged User,Super User",54d
+55e,Akash.Thompson,1a,Active,Super User,55e
+60h,Bob.Employee,1a,Active,Privileged User,60h

@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Workflow PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Workflow explicitTransitions="true" name="demo1" type="IdentityLifecycle">
+  <Variable initializer="script:return 10;" input="true" name="numId"/>
+  <Step action="script:System.out.println(&quot;Start&quot;);" icon="Start" name="Start" posX="37" posY="115">
+    <Transition to="Cal step"/>
+  </Step>
+  <Step action="script:System.out.println(&quot;We are in Stop&quot;);" icon="Stop" name="Stop" posX="898" posY="192"/>
+  <Step action="script:System.out.println(&quot;Processing Step&quot;);" icon="Default" name="Cal step" posX="157" posY="115">
+    <Description>Calcalution step</Description>
+    <Transition to="Step 1">
+      <Script>
+        <Source>if(numId &gt;= 10)
+return true;</Source>
+      </Script>
+    </Transition>
+    <Transition to="Step 2">
+      <Script>
+        <Source>if(numId &lt; 10)
+return true;</Source>
+      </Script>
+    </Transition>
+  </Step>
+  <Step icon="Default" name="Step 1" posX="397" posY="32">
+    <Script>
+      <Source>System.out.println("We are in Step 1");
+System.out.println("NumId  :- "+numId);</Source>
+    </Script>
+    <Transition to="Submission Form"/>
+  </Step>
+  <Step action="script:System.out.println(&quot;We are in Step 2&quot;);" icon="Default" name="Step 2" posX="395" posY="201">
+    <Transition to="Stop"/>
+  </Step>
+  <Step action="script:System.out.println(&quot;Submission Form&quot;);" icon="Default" name="Submission Form" posX="585" posY="32">
+    <Approval name="Submission Form" owner="spadmin" return="" send="">
+      <Form name="Submission Form">
+        <Attributes>
+          <Map>
+            <entry key="pageTitle" value="Submission Form"/>
+            <entry key="title" value="Submission Form"/>
+          </Map>
+        </Attributes>
+        <Description>Submission Form</Description>
+        <Section name="Section 1">
+          <Field displayName="Name In Past" name="Name In Past" type="string"/>
+          <Field displayName="Change Of Email-ID" name="Change Of Email-ID " type="string"/>
+        </Section>
+        <Button action="cancel" label="Cancel"/>
+        <Button action="next" label="Next"/>
+      </Form>
+    </Approval>
+    <Transition to="Approval Form"/>
+  </Step>
+  <Step action="script:System.out.println(&quot;Approval  Form&quot;);" icon="Default" name="Approval Form" posX="806" posY="33">
+    <Approval description="First Approval" mode="serial" name="Approval Form" owner="spadmin">
+      <Approval description="Final Approval" mode="serial" name="Child Approval" owner="Nilesh.Chugh"/>
+      <Approval description="Final Approval" mode="serial" name="Child Approval" owner="Nilesh.Chugh"/>
+    </Approval>
+    <Transition to="Stop"/>
+  </Step>
+</Workflow>

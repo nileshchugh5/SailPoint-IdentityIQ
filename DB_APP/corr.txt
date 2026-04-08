@@ -1,0 +1,38 @@
+import java.lang.String;
+import java.util.*; 
+import sailpoint.object.*; 
+
+// Try to correlate first on EmpNumber
+
+String EmpNumber = account.getAttribute("EmpNumber"); 
+System.out.println("Trying to correlation DB_App account: " + EmpNumber); 
+
+Identity cube = (Identity) context.getObjectByName(Identity.class,EmpNumber); 
+if (null != cube)
+	{
+   // found cube
+  if (cube.isCorrelated()) 
+  {
+       System.out.println("Successful Correlation based on EmpNumber:" + EmpNumber); 
+       return   java.util.Collections.singletonMap("identity", (Object) cube);
+   }
+} else 
+	{
+
+
+     Employee_ID = account.getAttribute("Employee_ID") ;
+     System.out.println("Trying to Correlate based on new EmpNumber:" + EmpNumber); 
+
+     cube = (Identity) context.getObjectByName(Identity.class,EmpNumber);  
+     if (null != cube) 
+	 {
+            // found cube
+            if (cube.isCorrelated()) {
+                  System.out.println("Successful Correlation based on newly calculated EmpNumber:" + EmpNumber); 
+                  return  java.util.Collections.singletonMap("identity", (Object) cube);
+             }
+     }
+}
+
+// Nothing to correlate to
+return  new HashMap();

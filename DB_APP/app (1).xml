@@ -1,0 +1,629 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sailpoint PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<sailpoint>
+<Application connector="sailpoint.connector.DelimitedFileConnector" featuresString="DIRECT_PERMISSIONS, NO_RANDOM_ACCESS, DISCOVER_SCHEMA" icon="enterpriseIcon" name="Business-App" profileClass="spadmin" type="DelimitedFile">
+  <AccountCorrelationConfig>
+    <Reference class="sailpoint.object.CorrelationConfig" name="Business-App correlation"/>
+  </AccountCorrelationConfig>
+  <Attributes>
+    <Map>
+      <entry key="PassphraseForPrivateKey" value="1:ACP:+HTb+mrNFXMjAAvCYm1jIl+5wy/MgnrlhZMAcwmTiMY="/>
+      <entry key="PrivateKeyFilePath"/>
+      <entry key="acctAggregationEnd">
+        <value>
+          <Date>1670695608400</Date>
+        </value>
+      </entry>
+      <entry key="acctAggregationStart">
+        <value>
+          <Date>1670695608286</Date>
+        </value>
+      </entry>
+      <entry key="afterProvisioningRule"/>
+      <entry key="beforeProvisioningRule"/>
+      <entry key="compositeDefinition"/>
+      <entry key="delimiter" value=","/>
+      <entry key="file" value="C:\Bussniness.csv"/>
+      <entry key="filetransport" value="local"/>
+      <entry key="filterEmptyRecords">
+        <value>
+          <Boolean>true</Boolean>
+        </value>
+      </entry>
+      <entry key="ftpsAuthMethod" value="password"/>
+      <entry key="ftpsClientCertificateFilePath"/>
+      <entry key="ftpsClientCertificatePassphrase"/>
+      <entry key="group.filetransport" value="local"/>
+      <entry key="group.filterEmptyRecords">
+        <value>
+          <Boolean>true</Boolean>
+        </value>
+      </entry>
+      <entry key="group.partitionMode" value="auto"/>
+      <entry key="hasHeader">
+        <value>
+          <Boolean>true</Boolean>
+        </value>
+      </entry>
+      <entry key="isCaseInsensitiveMerge">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="isSortedByIndexColumn">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="managerCorrelationFilter">
+        <value>
+          <Filter operation="EQ" property="employeeid" value="managerId"/>
+        </value>
+      </entry>
+      <entry key="mergeRows">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="nativeChangeDetectionAttributeScope" value="entitlements"/>
+      <entry key="nativeChangeDetectionAttributes"/>
+      <entry key="nativeChangeDetectionEnabled">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="nativeChangeDetectionOperations"/>
+      <entry key="parseType" value="delimited"/>
+      <entry key="partitionMode" value="auto"/>
+      <entry key="port"/>
+      <entry key="sftpAuthMethod" value="password"/>
+      <entry key="stopIfLineHasWrongColumnLength">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="sysDescriptions">
+        <value>
+          <Map>
+            <entry key="en_US"/>
+          </Map>
+        </value>
+      </entry>
+      <entry key="templateApplication" value="DelimitedFile Template"/>
+      <entry key="transportUser" value="spadmin"/>
+    </Map>
+  </Attributes>
+  <Owner>
+    <Reference class="sailpoint.object.Identity" name="spadmin"/>
+  </Owner>
+  <Schemas>
+    <Schema displayAttribute="fullName" identityAttribute="employeeId" instanceAttribute="" nativeObjectType="account" objectType="account" permissionsRemediationModificationType="None">
+      <AttributeDefinition name="employeeId" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="firstName" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="lastName" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="managerId" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="fullName" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="email" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="inactiveIdentity" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition entitlement="true" managed="true" multi="true" name="User Level" type="string">
+        <Description/>
+      </AttributeDefinition>
+    </Schema>
+  </Schemas>
+  <ApplicationScorecard/>
+</Application>
+<Application authoritative="true" connector="sailpoint.connector.DelimitedFileConnector" featuresString="DIRECT_PERMISSIONS, NO_RANDOM_ACCESS, DISCOVER_SCHEMA" icon="enterpriseIcon" name="HR-App" profileClass="spadmin" type="DelimitedFile">
+  <AccountCorrelationConfig>
+    <Reference class="sailpoint.object.CorrelationConfig" name="HR-App correlation"/>
+  </AccountCorrelationConfig>
+  <Attributes>
+    <Map>
+      <entry key="PassphraseForPrivateKey" value="1:ACP:DHoDkSYetpmp22L8sBciUuNsKDz0ELKrKrO77peh6w4="/>
+      <entry key="PrivateKeyFilePath"/>
+      <entry key="acctAggregationEnd">
+        <value>
+          <Date>1670473586086</Date>
+        </value>
+      </entry>
+      <entry key="acctAggregationStart">
+        <value>
+          <Date>1670473585997</Date>
+        </value>
+      </entry>
+      <entry key="afterProvisioningRule"/>
+      <entry key="beforeProvisioningRule"/>
+      <entry key="compositeDefinition"/>
+      <entry key="delimiter" value=","/>
+      <entry key="file" value="C:\HR1.csv"/>
+      <entry key="filetransport" value="local"/>
+      <entry key="filterEmptyRecords">
+        <value>
+          <Boolean>true</Boolean>
+        </value>
+      </entry>
+      <entry key="ftpsAuthMethod" value="password"/>
+      <entry key="ftpsClientCertificateFilePath"/>
+      <entry key="ftpsClientCertificatePassphrase"/>
+      <entry key="group.filetransport" value="local"/>
+      <entry key="group.filterEmptyRecords">
+        <value>
+          <Boolean>true</Boolean>
+        </value>
+      </entry>
+      <entry key="group.partitionMode" value="auto"/>
+      <entry key="hasHeader">
+        <value>
+          <Boolean>true</Boolean>
+        </value>
+      </entry>
+      <entry key="isCaseInsensitiveMerge">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="isSortedByIndexColumn">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="managerCorrelationFilter">
+        <value>
+          <Filter operation="EQ" property="employeeid" value="managerId"/>
+        </value>
+      </entry>
+      <entry key="mergeRows">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="nativeChangeDetectionAttributeScope" value="entitlements"/>
+      <entry key="nativeChangeDetectionAttributes"/>
+      <entry key="nativeChangeDetectionEnabled">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="nativeChangeDetectionOperations"/>
+      <entry key="parseType" value="delimited"/>
+      <entry key="partitionMode" value="auto"/>
+      <entry key="port"/>
+      <entry key="sftpAuthMethod" value="password"/>
+      <entry key="stopIfLineHasWrongColumnLength">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="sysDescriptions">
+        <value>
+          <Map>
+            <entry key="en_US"/>
+          </Map>
+        </value>
+      </entry>
+      <entry key="templateApplication" value="DelimitedFile Template"/>
+      <entry key="transportUser" value="spadmin"/>
+    </Map>
+  </Attributes>
+  <CreationRule>
+    <Reference class="sailpoint.object.Rule" name="Creation Rule - Set Password"/>
+  </CreationRule>
+  <Owner>
+    <Reference class="sailpoint.object.Identity" name="spadmin"/>
+  </Owner>
+  <Schemas>
+    <Schema displayAttribute="employeeId" identityAttribute="fullName" instanceAttribute="" nativeObjectType="account" objectType="account" permissionsRemediationModificationType="None">
+      <AttributeDefinition name="employeeId" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="firstName" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="lastName" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="managerId" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="fullName" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="email" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="department" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="region" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="location" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="inactiveIdentity" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="jobtitle" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="costcenter" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="employeeStatus" type="string">
+        <Description/>
+      </AttributeDefinition>
+    </Schema>
+  </Schemas>
+  <ApplicationScorecard/>
+</Application>
+<Application connector="sailpoint.connector.DelimitedFileConnector" featuresString="DIRECT_PERMISSIONS, NO_RANDOM_ACCESS, DISCOVER_SCHEMA" icon="enterpriseIcon" name="B 1" profileClass="spadmin" type="DelimitedFile">
+  <AccountCorrelationConfig>
+    <Reference class="sailpoint.object.CorrelationConfig" name="B 1 correlation"/>
+  </AccountCorrelationConfig>
+  <Attributes>
+    <Map>
+      <entry key="PassphraseForPrivateKey" value="1:ACP:/KXhhXhce9CkAzfZHd/D2T48h10pgkudDAoRjg+Ekgc="/>
+      <entry key="PrivateKeyFilePath"/>
+      <entry key="acctAggregationEnd">
+        <value>
+          <Date>1670595448929</Date>
+        </value>
+      </entry>
+      <entry key="acctAggregationStart">
+        <value>
+          <Date>1670595448677</Date>
+        </value>
+      </entry>
+      <entry key="afterProvisioningRule"/>
+      <entry key="beforeProvisioningRule"/>
+      <entry key="compositeDefinition"/>
+      <entry key="delimiter" value=","/>
+      <entry key="file" value="C:\Users\User\Downloads\info.csv"/>
+      <entry key="filetransport" value="local"/>
+      <entry key="filterEmptyRecords">
+        <value>
+          <Boolean>true</Boolean>
+        </value>
+      </entry>
+      <entry key="ftpsAuthMethod" value="password"/>
+      <entry key="ftpsClientCertificateFilePath"/>
+      <entry key="ftpsClientCertificatePassphrase"/>
+      <entry key="group.filetransport" value="local"/>
+      <entry key="group.filterEmptyRecords">
+        <value>
+          <Boolean>true</Boolean>
+        </value>
+      </entry>
+      <entry key="group.partitionMode" value="auto"/>
+      <entry key="hasHeader">
+        <value>
+          <Boolean>true</Boolean>
+        </value>
+      </entry>
+      <entry key="isCaseInsensitiveMerge">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="isSortedByIndexColumn">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="mergeRows">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="nativeChangeDetectionAttributeScope" value="entitlements"/>
+      <entry key="nativeChangeDetectionAttributes"/>
+      <entry key="nativeChangeDetectionEnabled">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="nativeChangeDetectionOperations"/>
+      <entry key="parseType" value="delimited"/>
+      <entry key="partitionMode" value="auto"/>
+      <entry key="port"/>
+      <entry key="sftpAuthMethod" value="password"/>
+      <entry key="stopIfLineHasWrongColumnLength">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="sysDescriptions">
+        <value>
+          <Map>
+            <entry key="en_US"/>
+          </Map>
+        </value>
+      </entry>
+      <entry key="templateApplication" value="DelimitedFile Template"/>
+    </Map>
+  </Attributes>
+  <Owner>
+    <Reference class="sailpoint.object.Identity" name="spadmin"/>
+  </Owner>
+  <Schemas>
+    <Schema displayAttribute="Account Name" identityAttribute="Employee ID" instanceAttribute="" nativeObjectType="account" objectType="account" permissionsRemediationModificationType="None">
+      <AttributeDefinition name="Account Name" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="Employee ID" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="Accout Status" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition entitlement="true" managed="true" multi="true" name="User Level" type="string">
+        <Description/>
+      </AttributeDefinition>
+    </Schema>
+  </Schemas>
+  <ApplicationScorecard/>
+</Application>
+<Application connector="sailpoint.connector.JDBCConnector" featuresString="DISCOVER_SCHEMA, PROVISIONING, SYNC_PROVISIONING, DIRECT_PERMISSIONS, SEARCH, ENABLE, UNLOCK" icon="databaseIcon" name="DB_App" profileClass="spadmin" type="JDBC">
+  <Attributes>
+    <Map>
+      <entry key="Group.SQL" value="select * from db_g;"/>
+      <entry key="Group.aggregationMode">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="Group.deltaTable"/>
+      <entry key="Group.driverClass" value="com.mysql.cj.jdbc.Driver"/>
+      <entry key="Group.getDeltaSQL"/>
+      <entry key="Group.getDirectPermObjectSQL"/>
+      <entry key="Group.getObjectSQL" value="select * from db_g where Employee_Id ='$(identity)';"/>
+      <entry key="Group.isPermissionEnabled">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="Group.mergeRows">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="Group.password" value="1:ACP:esoKjKlTBzjxIzOvuGW4lPcerevzERmLWNicwYZOiSc="/>
+      <entry key="Group.url" value="jdbc:mysql://localhost/db_app"/>
+      <entry key="Group.useExecuteQuery">
+        <value>
+          <Boolean>true</Boolean>
+        </value>
+      </entry>
+      <entry key="Group.useStoredProcedureDelta">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="Group.useStoredProcedureDirectPermission">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="Group.useStoredProcedureGetObject">
+        <value>
+          <Boolean>true</Boolean>
+        </value>
+      </entry>
+      <entry key="Group.useStoredProcedureSqlStmt">
+        <value>
+          <Boolean>true</Boolean>
+        </value>
+      </entry>
+      <entry key="Group.user" value="root"/>
+      <entry key="SQL" value="select * from db_users;"/>
+      <entry key="acctAggregationEnd">
+        <value>
+          <Date>1670922149787</Date>
+        </value>
+      </entry>
+      <entry key="acctAggregationStart">
+        <value>
+          <Date>1670922149755</Date>
+        </value>
+      </entry>
+      <entry key="afterProvisioningRule"/>
+      <entry key="aggregationMode">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="beforeProvisioningRule"/>
+      <entry key="buildMapRule" value="DB build"/>
+      <entry key="compositeDefinition"/>
+      <entry key="deltaTable"/>
+      <entry key="driverClass" value="com.mysql.cj.jdbc.Driver"/>
+      <entry key="getDeltaSQL"/>
+      <entry key="getObjectSQL" value="select * from db_users where Employee_Id ='$(identity)';"/>
+      <entry key="isPermissionEnabled">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="jdbcExceptionBucketing">
+        <value>
+          <Boolean>true</Boolean>
+        </value>
+      </entry>
+      <entry key="jdbcProvisionRule" value="DB App provision"/>
+      <entry key="mergeRows">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="nativeChangeDetectionAttributeScope" value="entitlements"/>
+      <entry key="nativeChangeDetectionAttributes"/>
+      <entry key="nativeChangeDetectionEnabled">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="nativeChangeDetectionOperations"/>
+      <entry key="partitionMode">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="partitionStatements"/>
+      <entry key="password" value="1:ACP:ognt5aCYP/09rWF4AW8L0f9KCnMliLT92xhNe4/T36w="/>
+      <entry key="provisionRule" value="globalRule"/>
+      <entry key="sysDescriptions">
+        <value>
+          <Map>
+            <entry key="en_US"/>
+          </Map>
+        </value>
+      </entry>
+      <entry key="templateApplication" value="JDBC Template"/>
+      <entry key="testConnSQL"/>
+      <entry key="url" value="jdbc:mysql://localhost/db_app"/>
+      <entry key="useExecuteQuery">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="useStoredProcedureDelta">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="useStoredProcedureDirectPermission">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="useStoredProcedureGetObject">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="useStoredProcedurePartition">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="useStoredProcedureSqlStmt">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="useStoredProcedureTestConn">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="user" value="root"/>
+    </Map>
+  </Attributes>
+  <CorrelationRule>
+    <Reference class="sailpoint.object.Rule" name="DB_app"/>
+  </CorrelationRule>
+  <Owner>
+    <Reference class="sailpoint.object.Identity" name="spadmin"/>
+  </Owner>
+  <ProvisioningForms>
+    <Form name="Form_Db" objectType="account" type="Create">
+      <Attributes>
+        <Map>
+          <entry key="pageTitle" value="Form_Db"/>
+        </Map>
+      </Attributes>
+      <Section name="Section 1">
+        <Field displayName="Employee_Id" name="Employee_Id" required="true" type="string">
+          <Script>
+            <Source>return identity.Extended1;</Source>
+          </Script>
+        </Field>
+        <Field displayName="EmpNumber" name="EmpNumber" required="true" type="string">
+          <Script>
+            <Source>return identity.Extended1;</Source>
+          </Script>
+        </Field>
+        <Field displayName="Name" name="Name" required="true" type="string">
+          <Script>
+            <Source>return identity.name;</Source>
+          </Script>
+        </Field>
+        <Field displayName="Status" name="Status" required="true" type="string" value="Active">
+          <AllowedValuesDefinition>
+            <Value>
+              <List>
+                <String>Active</String>
+              </List>
+            </Value>
+          </AllowedValuesDefinition>
+        </Field>
+        <Field displayName="Password" name="Password" required="true" type="string" value="test">
+          <AllowedValuesDefinition>
+            <Value>
+              <List>
+                <String>test</String>
+              </List>
+            </Value>
+          </AllowedValuesDefinition>
+        </Field>
+        <Field displayName="Account Locked" name="Account Locked" required="true" type="string" value="N">
+          <AllowedValuesDefinition>
+            <Value>
+              <List>
+                <String>N</String>
+              </List>
+            </Value>
+          </AllowedValuesDefinition>
+        </Field>
+      </Section>
+    </Form>
+  </ProvisioningForms>
+  <Schemas>
+    <Schema displayAttribute="Name" identityAttribute="EmpNumber" instanceAttribute="" nativeObjectType="account" objectType="account" permissionsRemediationModificationType="None">
+      <AttributeDefinition name="Employee_Id" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="EmpNumber" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="Name" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="password" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="status" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="Access" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="locked" type="string">
+        <Description/>
+      </AttributeDefinition>
+    </Schema>
+    <Schema aggregationType="group" descriptionAttribute="" displayAttribute="name" identityAttribute="name" instanceAttribute="" nativeObjectType="Group" objectType="Group" permissionsRemediationModificationType="None">
+      <AttributeDefinition name="name" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="description" type="string">
+        <Description/>
+      </AttributeDefinition>
+    </Schema>
+  </Schemas>
+  <ApplicationScorecard/>
+</Application>
+</sailpoint>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Bundle PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Bundle displayName="business role Db_role" name="Db_role business role" type="business">
+  <Attributes>
+    <Map>
+      <entry key="accountSelectorRules"/>
+      <entry key="allowDuplicateAccounts" value="false"/>
+      <entry key="allowMultipleAssignments" value="false"/>
+      <entry key="mergeTemplates" value="false"/>
+      <entry key="sysDescriptions">
+        <value>
+          <Map>
+            <entry key="en_US"/>
+          </Map>
+        </value>
+      </entry>
+    </Map>
+  </Attributes>
+  <Inheritance>
+    <Reference class="sailpoint.object.Bundle" name="DB-IT Role"/>
+  </Inheritance>
+  <Owner>
+    <Reference class="sailpoint.object.Identity" name="spadmin"/>
+  </Owner>
+  <Selector>
+    <IdentitySelector>
+      <MatchExpression>
+        <MatchTerm name="status" type="Entitlement" value="A">
+          <ApplicationRef>
+            <Reference class="sailpoint.object.Application" name="DB_App"/>
+          </ApplicationRef>
+        </MatchTerm>
+      </MatchExpression>
+    </IdentitySelector>
+  </Selector>
+</Bundle>

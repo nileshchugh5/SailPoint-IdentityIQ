@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Policy PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Policy certificationActions="Remediated,Mitigated,Delegated" configPage="entitlementPolicy.xhtml" executor="sailpoint.policy.EntitlementSODPolicyExecutor" name="Entitlement SOD Policy" state="Active" type="EntitlementSOD" typeKey="policy_type_entitlement_sod" violationOwnerType="Identity">
+  <PolicyAlert escalationStyle="reminder" hoursBetweenReminders="72" hoursTillEscalation="24">
+    <NotificationEmailTemplateRef>
+      <Reference class="sailpoint.object.EmailTemplate" name="Policy Violation"/>
+    </NotificationEmailTemplateRef>
+    <Owners>
+      <Reference class="sailpoint.object.Identity" name="Nilesh.Chugh"/>
+    </Owners>
+    <ReminderEmailTemplateRef>
+      <Reference class="sailpoint.object.EmailTemplate" name="Policy Violation"/>
+    </ReminderEmailTemplateRef>
+  </PolicyAlert>
+  <Attributes>
+    <Map>
+      <entry key="sysDescriptions">
+        <value>
+          <Map>
+            <entry key="en_US"/>
+          </Map>
+        </value>
+      </entry>
+      <entry key="taskResultId" value="c0a838018533146e8185334d9bc20094"/>
+    </Map>
+  </Attributes>
+  <Owner>
+    <Reference class="sailpoint.object.Identity" name="spadmin"/>
+  </Owner>
+  <ViolationOwner>
+    <Reference class="sailpoint.object.Identity" name="spadmin"/>
+  </ViolationOwner>
+  <GenericConstraints>
+    <GenericConstraint name="new rule 1" violationOwnerType="None">
+      <Attributes>
+        <Map>
+          <entry key="taskResultId" value="c0a83801851911ba81851ae6813105db"/>
+        </Map>
+      </Attributes>
+      <IdentitySelector>
+        <MatchExpression>
+          <MatchTerm name="User Level" type="Entitlement" value="Privileged User">
+            <ApplicationRef>
+              <Reference class="sailpoint.object.Application" name="Bussiness Data"/>
+            </ApplicationRef>
+          </MatchTerm>
+        </MatchExpression>
+      </IdentitySelector>
+      <IdentitySelector>
+        <MatchExpression>
+          <MatchTerm name="User Level" type="Entitlement" value="Super User">
+            <ApplicationRef>
+              <Reference class="sailpoint.object.Application" name="Bussiness Data"/>
+            </ApplicationRef>
+          </MatchTerm>
+        </MatchExpression>
+      </IdentitySelector>
+    </GenericConstraint>
+  </GenericConstraints>
+</Policy>
