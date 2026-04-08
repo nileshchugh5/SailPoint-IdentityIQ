@@ -1,0 +1,8 @@
+Account ID,Account Name,Employee ID,Account Status,User Level,managerId,firstname,lastname
+10001a,James.Smith,0a,A,Privileged User,2a1,James,Smith
+10002a,Rohan.J,2a1,A,Super User,2a1,Rohan,J
+10003a,Nicole.A,2a21,A,Admin,2a1,NICOLE,A
+10006a,Nicole.b,2a2x1,A,"Privileged User,Admin",2a1,Nicole,b
+10008a,rao.ann,2a2x12,A,Admin,2a1,rao,ann
+10009a,ras.all,2a2x16,A,Admin,2a1,ras,all
+10010a,chugh.nilesh,2a2x18,a,Admin,2a1,nilesh,chugh
