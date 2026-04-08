@@ -1,4 +1,4 @@
-#  SailPoint IdentityIQ End-to-End Project
+#  SailPoint IdentityIQ 
 
 ##  Overview
 This project demonstrates a complete implementation of Identity Governance using SailPoint IdentityIQ.
